@@ -1,0 +1,22 @@
+data from https://www.kaggle.com/c/dogs-vs-cats/data
+
+code from https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+VGG16   https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3
+
+code: https://gist.github.com/fchollet/0830affa1f7f19fd47b06d4cf89ed44d
+
+code: https://gist.github.com/fchollet/f35fbc80e066a49d65f1688a7e99f069
+
+code: https://gist.github.com/fchollet/7eb39b44eb9e16e59632d25fb3119975
+
+how to fix the following bug:
+
+ Keras MaxPooling2D gives ValueError: Negative dimension size caused by subtracting 2 from 1 for 'MaxPool_x'
+
+https://github.com/fchollet/keras/issues/3945
+
+In fact, this problem results from your initial input.
+input_shape=(3,224,224) is for "theano"
+and your backend should be "tensorflow", so it should be
+input_shape=(224,224,3).

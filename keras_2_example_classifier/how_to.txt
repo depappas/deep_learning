@@ -1,0 +1,11 @@
+data from https://www.kaggle.com/c/dogs-vs-cats/data
+
+code from https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+VGG16   https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3
+
+code: 
+https://gist.github.com/fchollet/0830affa1f7f19fd47b06d4cf89ed44d#file-classifier_from_little_data_script_1-py-L21
+https://gist.github.com/fchollet/f35fbc80e066a49d65f1688a7e99f069#file-classifier_from_little_data_script_2-py
+https://gist.github.com/fchollet/7eb39b44eb9e16e59632d25fb3119975
+
