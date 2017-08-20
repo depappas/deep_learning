@@ -1,12 +1,13 @@
 import cv2
+import sys
 import numpy as np
 
 img = cv2.imread(sys.argv[1])
 
 img_bw = 255*(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) > 5).astype('uint8')
 
-se1 = cv2.getStructuringElement(cv2.MORPH_RECT, (5,5))
-se2 = cv2.getStructuringElement(cv2.MORPH_RECT, (2,2))
+se1 = cv2.getStructuringElement(cv2.MORPH_RECT, (20,20))
+se2 = cv2.getStructuringElement(cv2.MORPH_RECT, (10,10))
 mask = cv2.morphologyEx(img_bw, cv2.MORPH_CLOSE, se1)
 mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, se2)
 
